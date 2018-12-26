@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        tictactoe
+    </title>
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+    <div class="row">
+        <div data-test-id="grid00" onclick="handleClick(this, 0, 0)"></div>
+
+        <div data-test-id="grid01" onclick="handleClick(this, 0, 1)"></div>
+
+        <div data-test-id="grid02" onclick="handleClick(this, 0, 2)"></div>
+
+    </div>
+
+    <div class="row">
+        <div data-test-id="grid10" onclick="handleClick(this, 1, 0)"></div>
+        <div data-test-id="grid11" onclick="handleClick(this,1,1)"></div>
+        <div data-test-id="grid12" onclick="handleClick(this,1,2)"></div>
+
+    </div>
+
+    <div class="row">
+        <div data-test-id="grid20" onclick="handleClick(this, 2, 0)" ></div>
+
+        <div data-test-id="grid21" onclick="handleClick(this,2,1)"></div>
+
+        <div data-test-id="grid22" onclick="handleClick(this,2,2)"></div>
+
+    </div>
+
+   <div class = 'button' id = 'displayWinner'></div>
+   <div class = 'button' id = 'reset' onclick = "handleResetButton()"> reset </div>
+
+    <script src="tictactoe.js"></script>
+
+</body>
+
+</html>
